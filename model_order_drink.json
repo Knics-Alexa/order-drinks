@@ -1,0 +1,404 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "drink order",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DrinkOrderIntent",
+                    "slots": [
+                        {
+                            "name": "I_want",
+                            "type": "i_want"
+                        },
+                        {
+                            "name": "drink",
+                            "type": "drink"
+                        },
+                        {
+                            "name": "quantity",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "size",
+                            "type": "size"
+                        },
+                        {
+                            "name": "type",
+                            "type": "type"
+                        },
+                        {
+                            "name": "quantitytype",
+                            "type": "quantitytype"
+                        }
+                    ],
+                    "samples": [
+                        "{I_want} {quantity} {quantitytype} {size} {drink} {type}",
+                        "{quantity} {quantitytype} {size} {drink} {type}",
+                        "{I_want} {quantity} {quantitytype} {size} {type} {drink}",
+                        "{I_want} {size} {type} {drink} bottles",
+                        "{I_want} {quantity} {quantitytype} {drink}",
+                        "{I_want} {drink} {type}",
+                        "{type} bottles of {drink}",
+                        "{I_want} {type} bottles of {drink}",
+                        "{I_want} {type} {drink} bottles",
+                        "{I_want} {drink}",
+                        "{I_want} order a {drink} {type} ",
+                        "{I_want} order {drink} {type}",
+                        "{I_want} order {drink}",
+                        "{I_want} order a {drink}",
+                        "a {type}",
+                        "{type}",
+                        "a {drink}",
+                        "{quantity} {drink}",
+                        "{I_want} a {drink}",
+                        "{I_want} {size} litre {type} {quantity} {drink}",
+                        "{I_want} {size} litre {type} {drink}",
+                        "{I_want} {type} {size} litre {drink}",
+                        "{I_want} {type} {size} litre {quantity} {drink}",
+                        "{I_want} {quantity} {type} {size} litre {drink}",
+                        "{I_want} to order {type} {size} litre {quantity} {drink}",
+                        "{I_want} to order {type} {size} litre {drink}",
+                        "{size} litre to order {drink}",
+                        "{I_want} to order {quantity} {drink}",
+                        "{I_want} to order {drink}"
+                    ]
+                },
+                {
+                    "name": "OrderSizeIntent",
+                    "slots": [
+                        {
+                            "name": "size",
+                            "type": "size"
+                        },
+                        {
+                            "name": "I_want",
+                            "type": "i_want"
+                        },
+                        {
+                            "name": "type",
+                            "type": "type"
+                        }
+                    ],
+                    "samples": [
+                        "{I_want} {size} {type}",
+                        "{I_want} {size}",
+                        "in {size} liter",
+                        "{size} liter",
+                        "{size}"
+                    ]
+                },
+                {
+                    "name": "OrderQuantityIntent",
+                    "slots": [
+                        {
+                            "name": "quantity",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "quantitytype",
+                            "type": "quantitytype"
+                        },
+                        {
+                            "name": "type",
+                            "type": "type"
+                        },
+                        {
+                            "name": "drink",
+                            "type": "drink"
+                        },
+                        {
+                            "name": "I_want",
+                            "type": "i_want"
+                        }
+                    ],
+                    "samples": [
+                        "{I_want} {quantity} {type}",
+                        "{I_want} {quantity} {quantitytype}",
+                        "{I_want} {quantity} {drink} {type}",
+                        "{quantity} {drink} {type}",
+                        "{quantity} {quantitytype} {type}",
+                        "{quantity} {quantitytype} of {type}",
+                        "{quantity} {type} {quantitytype}",
+                        "{quantity} {quantitytype}",
+                        "{quantity}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "drink",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "MONSTER ENERGY"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FANTA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VIO WASSER MEDIUM"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VIO WASSER STILL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MEZZO MIX"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FANTA ORANGE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SPRITE"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COKE LIGHT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COKE ZERO"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COCA COLA"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "i_want",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Please order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Can you please order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I want to order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Order me"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I like to order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I would like to order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "We would like to order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I prefer to order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I want "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "plastic bottle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glass bottle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glass"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plastic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cans"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plastic bottles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glass bottles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "can"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "size",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "zero point two liter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "half liter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one liter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one and half liter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two liter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "quantitytype",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "crates"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "packs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pack"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "crate"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
